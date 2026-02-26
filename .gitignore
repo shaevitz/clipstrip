@@ -1,0 +1,12 @@
+.DS_Store
+.derived/
+build/
+DerivedData/
+swifterror.txt
+strip_clipboard_url
+
+# Xcode user-specific state
+*.xcuserstate
+xcuserdata/
+ClipStrip.xcodeproj/project.xcworkspace/xcuserdata/
+
