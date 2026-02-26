@@ -1,32 +1,32 @@
 # ClipStrip
 
-ClipStrip is a macOS menu bar app that strips URL/text metadata from image clipboard entries, leaving image data only.
+ClipStrip is a macOS menu bar app that strips URL/text metadata from image clipboard entries and keeps the image.
 
-## What it does
+## Install (no Xcode needed)
 
-- Adds a menu bar icon (clipboard with red X)
-- Provides a `Strip URL from Clipboard` action
-- Keeps image payloads while removing URL/HTML/plain text clipboard flavors
+1. Download `dist/ClipStrip.app.zip`.
+2. Unzip it.
+3. Move `ClipStrip.app` to `/Applications`.
+4. Open it.
 
-## Project layout
+If macOS blocks the first launch:
 
-- `ClipStripApp/` app source, plist, and entitlements
-- `ClipStrip.xcodeproj` generated Xcode project
-- `project.yml` XcodeGen project definition
-- `APP_STORE_SETUP.md` App Store submission notes
+1. Right-click `ClipStrip.app` -> `Open`.
+2. Click `Open` again in the confirmation dialog.
 
-## Build in Xcode
+## Use
 
-1. Open `ClipStrip.xcodeproj`
-2. Select target `ClipStrip`
-3. Set your team in Signing & Capabilities
-4. Run (`Cmd+R`) on `My Mac`
+1. Click the ClipStrip icon in the menu bar.
+2. Click `Strip URL from Clipboard`.
 
-## Regenerate project (optional)
+## Run at login
 
-If you change `project.yml`:
+1. Open System Settings -> General -> Login Items & Extensions.
+2. Under `Open at Login`, click `+`.
+3. Select `ClipStrip.app`.
+
+## Build from source (optional)
 
 ```bash
-xcodegen generate
+./build_menubar_app.sh
 ```
-
