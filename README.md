@@ -1,8 +1,14 @@
 # ClipStrip
 
-ClipStrip is a macOS menu bar app that strips URL/text metadata from image clipboard entries and keeps the image.
+ClipStrip is a macOS menu bar app that strips URL/text metadata from image clipboard entries, leaving image data only.
 
-## Install (no Xcode needed)
+## What it does
+
+Adds a menu bar icon (clipboard with red X)
+Provides a Strip URL from Clipboard action
+Keeps image payloads while removing URL/HTML/plain text clipboard flavors
+
+## Install
 
 1. Download `dist/ClipStrip.app.zip`.
 2. Unzip it.
